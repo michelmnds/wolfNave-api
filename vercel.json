@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/persona-trainers",
+      "src": "/personal-trainers",
       "dest": "./app.js"
     }
   ]
