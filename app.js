@@ -13,6 +13,9 @@ app.get("/", (req, res) => {
 const personalTrainersRoutes = require("./routes/personalTrainers.routes");
 app.use("/personal-trainers", personalTrainersRoutes);
 
+const cityRoutes = require("./routes/city.routes");
+app.use("/cities", cityRoutes);
+
 require("./error-handling")(app);
 
 module.exports = app;
