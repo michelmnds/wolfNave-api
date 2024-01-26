@@ -16,6 +16,9 @@ app.use("/personal-trainers", personalTrainersRoutes);
 const cityRoutes = require("./routes/city.routes");
 app.use("/cities", cityRoutes);
 
+const specialitiesRoutes = require("./routes/specialities.routes");
+app.use("/specialities", specialitiesRoutes);
+
 require("./error-handling")(app);
 
 module.exports = app;
