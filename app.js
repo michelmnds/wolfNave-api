@@ -1,14 +1,16 @@
 require("dotenv").config();
 
+const cors = require("cors");
 const express = require("express");
-
 const app = express();
 
 require("./config")(app);
 
-app.get("/", (req, res) => {
-  res.send("Express on Vercel");
-});
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://wolf-nave.vercel.app/"],
+  })
+);
 
 const personalTrainersRoutes = require("./routes/personalTrainers.routes");
 app.use("/personal-trainers", personalTrainersRoutes);
