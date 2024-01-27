@@ -6,6 +6,7 @@ const personalSchema = new mongoose.Schema({
   speciality: { type: [String], required: true },
   image: { type: String, required: true },
   video: { type: String, default: "" },
+  gender: { tpye: String },
 });
 
 const PersonalTrainer = mongoose.model("PersonalTrainer", personalSchema);
