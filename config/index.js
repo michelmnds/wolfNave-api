@@ -25,7 +25,7 @@ module.exports = (app) => {
       origin: [
         "http://localhost:5173",
         "https://wolf-nave.vercel.app",
-        "https://www.wolfnave.com/",
+        "https://www.wolfnave.com",
       ],
     })
   );
