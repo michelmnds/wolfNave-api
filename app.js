@@ -8,7 +8,11 @@ require("./config")(app);
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://wolf-nave.vercel.app"],
+    origin: [
+      "http://localhost:5173",
+      "https://wolf-nave.vercel.app",
+      "https://www.wolfnave.com/",
+    ],
   })
 );
 
